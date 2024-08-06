@@ -3,7 +3,7 @@ class Box {
         this.width = width;
         this.height = height;
 
-        this.body = Bodies.rectangle(x, y, width, height, {restitution: 1, friction: 0});
+        this.body = Bodies.rectangle(x, y, width, height);
         Composite.add(world, this.body);
     }
 
