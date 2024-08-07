@@ -1,10 +1,10 @@
 class Box {
-    constructor(x, y, width, height, color) {
+    constructor(x, y, width, height, color, options) {
         this.width = width;
         this.height = height;
         this.color = color;
 
-        this.body = Bodies.rectangle(x, y, width, height);
+        this.body = Bodies.rectangle(x + width/2, y + height/2, width, height, options);
         Composite.add(world, this.body);
     }
 
