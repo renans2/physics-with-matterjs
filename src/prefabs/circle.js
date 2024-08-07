@@ -1,9 +1,9 @@
 class Circle {
-    constructor(x, y, radius, color) {
+    constructor(x, y, radius, color, options) {
         this.radius = radius;
         this.color = color;
 
-        this.body = Bodies.circle(x, y, radius, {restitution: 0.5, friction: 0});
+        this.body = Bodies.circle(x, y, radius, options);
         Composite.add(world, this.body);
     }
 

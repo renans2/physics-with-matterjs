@@ -29,7 +29,7 @@ function draw(){
     floor3.draw();
 
     for (let i = 0; i < 10; i++) {
-        circles.push(new Circle(width/3 - 70, 0, 2, color(50,200,255)));
+        circles.push(new Circle(width/3 - 70, 0, 2, color(50,200,255), {restitution: 0, friction: 0}));
     }
 
     for (let i = circles.length-1; i >= 0; i--) {
